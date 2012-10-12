@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/fittext.js"></script>
+
+    <style type="text/css">
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 3px solid green;
+            /*margin: 40px;
+            padding: 40px;*/
+        }
+        .no_fittext {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="no_fittext">
+        This is the default behaviour without fittext 
+        This is the default behaviour without fittext 
+    </div>
+    <div class="testDiv">
+        This is the default behaviour withwith fittext 
+        This is the default behaviour withwith fittext 
+    </div>
+    <div class="testDiv">
+        T
+    </div>
+    <div class="testDiv">
+        .
+    </div>
+    <div class="testDiv">
+        This is normal.
+    </div>
+    <div class="testDiv">
+        This has a loooooooong word.
+    </div>
+    <div class="testDiv">
+        This is normal.
+        Thisisalongwordwithoutspacesbecausethatcouldgetinteresting.
+        Hits the MIN_TEXT_SIZE parameter so there's still SOMETHING to display.
+    </div>
+
+<script type="text/javascript">
+
+$(".testDiv").fittext();
+
+</script>
+
+
+</body>
+
+</html>
