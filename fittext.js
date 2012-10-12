@@ -41,7 +41,8 @@
                 var limit = direction == -1 ? MIN_FONT_SIZE_PX : MAX_FONT_SIZE_PX;
                 var cloneHeight = clone.innerHeight();
 
-                if ((decreaseOnly && direction == -1) || ! decreaseOnly) {
+                if ((decrease && direction == -1) ||
+                    (increase && direction ==  1)) {
                     // TODO try to make a good guess about the required font size
                     // from the ratio of the clone height to the desired height.
                     // This will reduce the number of iterations in the next step.
