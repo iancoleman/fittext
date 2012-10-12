@@ -22,7 +22,7 @@
                     width = $this.innerWidth(),
                     height = $this.innerHeight(),
                     originalFontSize = parseInt($this.css("font-size")),
-                    adjustedFontSize = parseInt($this.css("font-size")),
+                    adjustedFontSize = parseInt($this.css("font-size"));
                 var clone = $this.clone();
                 clone.css({
                     "position": "absolute",
